@@ -1,0 +1,103 @@
+/* Header Container */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Logo */
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* Main Navigation */
+.main-navigation ul {
+  list-style: none;
+  display: flex;
+}
+
+.main-navigation li {
+  margin-right: 20px;
+}
+
+.main-navigation a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Search Bar */
+.search-bar input[type="text"] {
+  width: 200px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+.search-bar button {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 3px;
+  color: #333;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* User Actions */
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.user-menu a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu-toggle.open {
+  display: block;
+}
+
+.fa-bars {
+  font-size: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .main-navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .main-navigation.open {
+    display: flex;
+  }
+
+  .main-navigation li {
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
